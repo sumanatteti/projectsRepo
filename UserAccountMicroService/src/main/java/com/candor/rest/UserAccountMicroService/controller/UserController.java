@@ -43,6 +43,7 @@ public class UserController {
 			return new ResponseEntity(new CustomErrorType("User with id " + userId + " not found"), HttpStatus.NOT_FOUND);
 		}
 		return new ResponseEntity<User>(user, HttpStatus.OK);
+		
 	}
 
 }
